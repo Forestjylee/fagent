@@ -25,7 +25,7 @@ prompt.pretty_print()
 agent_executor = create_react_agent(llm, tools, messages_modifier=prompt)
 
 response = agent_executor.invoke(
-    {"messages": [("user", "explain artificial intelligence")]}
+    {"messages": [("user", "guangzhou weather tomorrow")]}
 )
 for message in response["messages"]:
     print(message.content)
